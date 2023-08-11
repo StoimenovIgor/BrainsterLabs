@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/bd71ef9677.js" crossorigin="anonymous"></script>
+
+    <title>Form</title>
+  </head>
+  <body class="myBg">
+
+    
+    <div class="transition transition-1 is-active"></div>
+
+
+    <!--NavBar-->
+    <div class="container">
+    <nav class="navbar navbar-expand-lg myBorder">
+        <a class="navbar-brand" href="index.html"><img src="Logo.png" style="width:75px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item p-1">
+                <a class="nav-link h5  myHover"  onclick="window.open ('https://brainster.co/marketing/',''); return false" href="javascript:void(0)">Академија за маркетинг</a>
+              </li>
+              <li class="nav-item p-1">
+                <a class="nav-link h5  myHover"  onclick="window.open ('https://brainster.co/full-stack/',''); return false"  href="javascript:void(0)">Академија за програмирање</a>
+              </li>
+              <li class="nav-item p-1">
+                <a class="nav-link h5  myHover" onclick="window.open ('https://brainster.co/data-science/',''); return false"  href="javascript:void(0)">Академија за data science</a>
+              </li>
+              <li class="nav-item p-1 ">
+                <a class="nav-link h5  myHover"onclick="window.open ('https://brainster.co/graphic-design/', ''); return false"  href="javascript:void(0)">Академија за дизајн</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link h5 text-warning m-3"onclick="window.open ('form.html', ''); return false" href="javascript:void(0)" ><button type="button" class="btn btn-danger" style="width: 200px" target="_blank">Вработи наш студент</button></a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+      
+    <!--Form-->
+    <div class="container">
+    
+    <form class="needs-validation myBorder" action="client.php" method="post" novalidate>
+            <h1 class="text-center font-italic">Вработи студенти</h1>
+            
+    <div class="form-row mt-5">
+     <div class="col-md-5 offset-md-1 mb-3">
+        <label for="firstAndLastName">Име и презиме</label>
+        <input type="text" class="form-control" id="firstAndLastName" placeholder="Вашето име и презиме" name="firstAndLastName" required>
+            <div class="valid-feedback">
+                 Одлично!
+            </div>
+            <div class="invalid-feedback">
+                 Ве молиме внесете валиднo име и презиме.
+            </div>
+     </div>
+     <div class="col-md-5 mb-3">
+        <label for="companyName">Името на вашата компанија</label>
+        <input type="text" class="form-control" id="companyName" placeholder="Име на вашата компанија" name="companyName" required>
+            <div class="valid-feedback">
+                 Одлично
+            </div>
+            <div class="invalid-feedback">
+                 Ве молиме внесете го името на вашата компанија.
+            </div>
+            </div>
+       </div>
+
+
+
+
+<div class="form-row">
+       <div class="col-md-5 offset-md-1 mb-3">
+         <label for="email">Контaкт имејл</label>
+         <input type="email" class="form-control" id="email" placeholder="Конакт имејл на вашата компанија" name="email" required>
+         <div class="valid-feedback">
+           Одлично
+         </div>
+         <div class="invalid-feedback">
+          Ве молиме внесете валидна имејл адреса
+       </div>
+     </div>
+     <div class="col-md-5  mb-3">
+       <label for="number">Конткт телефон</label>
+       <input type="number" class="form-control" id="number" placeholder="Конакт телефон на вашата компанија" name="number" required>
+       <div class="valid-feedback">
+         Одлично
+       </div>
+       <div class="invalid-feedback">
+         Ве молиме внесете валиден телефонски број.
+     </div>
+   </div>
+ </div>
+
+ 
+
+
+
+
+<div class="form-row">
+     <div class="col-md-5 offset-md-1 mb-3">
+       <label for="student">Тип на студент</label>
+       <select class="custom-select" id="student" name="student" required>
+         <option selected disabled value="">Изберете тип на студент</option>
+         <option value="marketing">Студенти од маркетинг</option>
+         <option value="coding">Студенти од програмирање</option>
+         <option value="dataScience">Студенти од data science</option>
+         <option value="desing">Студенти од дизајн</option>
+       </select>
+       <div class="valid-feedback">
+         Одлично
+       </div>
+       <div class="invalid-feedback">
+         Ве молиме изберете тип на студент.
+       </div>
+     </div>
+   <div class="col-md-5 mb-3 pt-30">
+     <button class="btn btn-danger form-btn" type="submit" name="submit">Испрати</button>
+   </div>
+</div>
+</form>
+</div>
+
+
+
+<div class="footer myBorder fixed-bottom">
+    <h5 class="text-center">
+      Изработено со ♥ од студентите на Brainster
+    </h5>
+  </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+ 
+  <script>
+
+          (function() {
+          'use strict';
+          window.addEventListener('load', function() {
+        
+          var forms = document.getElementsByClassName('needs-validation');
+
+          var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+            }
+          form.classList.add('was-validated');
+              }, false);
+              });
+                 }, false); 
+        })();
+        
+          window.onload = () => {
+          const transition_el = document.querySelector(".transition");
+          const anchors = document.querySelectorAll("a");
+          setTimeout(() => {
+            transition_el.classList.remove("is-active");
+          }, 500);
+
+          for (let i = 0; i < anchors.length; i++) {
+            const anchor = anchors[i];
+            anchor.addEventListener("click", (e) => {
+              e.preventDefault();
+              let target = e.currentTarget.href;
+
+              transition_el.classList.add("is-active");
+
+              setTimeout(() => {
+                window.location.href = target;
+              }, 500);
+            });
+          }
+        };
+      
+</script>
+
+  </body>
+  </html>
